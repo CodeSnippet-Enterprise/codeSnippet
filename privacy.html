@@ -1,0 +1,163 @@
+
+<!-- Privacy Policy Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | CODE-SNIPPET</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="nav-wrapper">
+        <div class="container">
+            <a href="#" class="brand-logo">
+                <img src="logo.png" alt="CODE-SNIPPET ENTERPRISE Logo" class="responsive-img">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="testimonial.html" class="nav-link">Testimonials</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to us. This privacy policy outlines how CODE-SNIPPET collects, uses, and protects your personal information.</p>
+                <h5>Information We Collect</h5>
+                <ul>
+                    <li>Contact details (e.g., email, phone number)</li>
+                    <li>Browsing data and cookies</li>
+                </ul>
+                <h5>How We Use Your Information</h5>
+                <ul>
+                    <li>To improve our services</li>
+                    <li>To communicate with you about updates</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+  
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col s12 m6 l4">
+                <h5 class="white-text">CODE-SNIPPET</h5>
+                <p class="grey-text text-lighten-4">Innovating the future of coding.</p>
+            </div>
+            <!-- Quick Links - Split into two sections -->
+            <div class="col s12 m6 l4 quick-links">
+                <div class="links-column">
+                    <h5 class="white-text">Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html" class="grey-text text-lighten-3">Home</a></li>
+                        <li><a href="about.html" class="grey-text text-lighten-3">About Us</a></li>
+                        <li><a href="services.html" class="grey-text text-lighten-3">Services</a></li>
+                        <li><a href="contact.html" class="grey-text text-lighten-3">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <ul>
+                        <li><a href="projects.html" class="grey-text text-lighten-3">Projects</a></li>
+                        <li><a href="testimonial.html" class="grey-text text-lighten-3">Testimonials</a></li>
+                        <li><a href="blog.html" class="grey-text text-lighten-3">Blog</a></li>
+                        <li><a href="careers.html" class="grey-text text-lighten-3">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Social Media -->
+            <div class="col s12 m6 l4">
+                <h5 class="white-text">Follow Us</h5>
+                <a href="#" class="btn-floating btn-large waves-effect"><i class="material-icons">facebook</i></a>
+                <a href="#" class="btn-floating btn-large waves-effect "><i class="material-icons">twitter</i></a>
+                <a href="#" class="btn-floating btn-large waves-effect"><i class="material-icons">linkedin</i></a>
+                <a href="#" class="btn-floating btn-large waves-effect"><i class="material-icons">github</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2024 CODE-SNIPPET| All Rights Reserved
+        </div>
+    </div>
+</footer>
+            
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousels = document.querySelectorAll('.carousel');
+        M.Carousel.init(carousels, { fullWidth: true, indicators: true });
+    });
+</script>
+
+<script>
+    document.querySelector('#submit-form').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('Form submitted successfully!');
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems, {});
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | CODE-SNIPPET</title>
+    <!-- Include Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Include Materialize CSS for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Animate On Scroll (AOS) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-wrapper">
+        <div class="container">
+            <a href="#" class="brand-logo">
+                <img src="logo.png" alt="CODE-SNIPPET ENTERPRISE Logo" class="responsive-img" style="max-width: 150px;">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="testimonial.html" class="nav-link">Testimonials</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+     <!-- Hero Section -->
+    <section class="hero">
+    <div class="container">
+        <h1 class="center-align" data-aos="fade-up">Get in Touch</h1>
+        <p class="flow-text center-align" data-aos="fade-up" data-aos-delay="100">
+            Have questions or want to work with us? Fill out the form below, and we’ll get back to you promptly.
+        </p>
+    </div>
+</section>
+
+
+
+    <section class="contact section">
+    <div class="container">
+        <form action="/submit-contact" method="POST" class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <div class="input-group">
+                    <span class="input-group-text material-icons">person</span>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Full Name" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <div class="input-group">
+                    <span class="input-group-text material-icons">email</span>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email Address" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-group">
+                    <span class="input-group-text material-icons">subject</span>
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject of Your Message" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-group">
+                    <span class="input-group-text material-icons">message</span>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn waves-effect waves-light btn-large send-btn" aria-label="Send Message">
+                    <span class="material-icons">send</span> Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+    <section class="contact-details section">
+        <div class="container">
+            <h2>Contact Details</h2>
+            <p>If you need immediate assistance, you can reach us via the following channels:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@codesnippet.com">info@codesnippet.com</a></li>
+                <li>Phone: +234 704 695 2003</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="company-location section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>What services does CODE-SNIPPET offer?</h4>
+                <p>We provide cutting-edge cybersecurity solutions, including threat analysis, vulnerability assessments, and custom security systems.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How can I request a quote for a cybersecurity service?</h4>
+                <p>Simply fill out our contact form with your request, and one of our experts will get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col s12 m6 l4">
+                <h5>CODE-SNIPPET</h5>
+                <p>Innovating the future of coding.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col s12 m6 l4 quick-links">
+                <div class="links-column">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <ul>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <!-- Social Media -->
+<div class="col s12 m6 l4">
+    <h5>Follow Us</h5>
+    <a href="#" class="btn-floating btn-large waves-effect"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="btn-floating btn-large waves-effect"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="btn-floating btn-large waves-effect"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" class="btn-floating btn-large waves-effect"><i class="fab fa-github"></i></a>
+</div>
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2024 CODE-SNIPPET | All Rights Reserved
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousels = document.querySelectorAll('.carousel');
+        M.Carousel.init(carousels, { fullWidth: true, indicators: true });
+    });
+</script>
+
+<script>
+    document.querySelector('#submit-form').addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('Form submitted successfully!');
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems, {});
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
