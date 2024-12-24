@@ -1,11 +1,10 @@
-
 <!-- Blog Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | CODE-SNIPPET</title>
+    <title>Blog - CODE-SNIPPET ENTERPRISE</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -18,7 +17,19 @@
             <a href="#" class="brand-logo">
                 <img src="logo.png" alt="CODE-SNIPPET ENTERPRISE Logo" class="responsive-img" style="max-width: 150px;">
             </a>
+            <a href="#" class="sidenav-trigger" id="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
             <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="testimonial.html" class="nav-link">Testimonials</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <ul class="sidenav" id="mobile-nav">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
@@ -131,6 +142,17 @@
                     link.classList.add('active');
                 }
             });
+        });
+
+        const sidenav = document.getElementById('mobile-nav');
+        const trigger = document.getElementById('mobile-menu');
+
+        trigger.addEventListener('click', function() {
+            if (sidenav.style.display === 'flex') {
+                sidenav.style.display = 'none';
+            } else {
+                sidenav.style.display = 'flex';
+            }
         });
     });
 </script>

@@ -27,7 +27,19 @@
             <a href="#" class="brand-logo">
                 <img src="logo.png" alt="CODE-SNIPPET ENTERPRISE Logo" class="responsive-img">
             </a>
+            <a href="#" class="sidenav-trigger" id="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
             <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="testimonial.html" class="nav-link">Testimonials</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <ul class="sidenav" id="mobile-nav">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
@@ -158,6 +170,20 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sidenav = document.getElementById('mobile-nav');
+        const trigger = document.getElementById('mobile-menu');
+
+        trigger.addEventListener('click', function() {
+            if (sidenav.style.display === 'flex') {
+                sidenav.style.display = 'none';
+            } else {
+                sidenav.style.display = 'flex';
+            }
+        });
+    });
 </script>
 </body>
 </html>
