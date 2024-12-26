@@ -20,71 +20,98 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    
 <header>
     <nav class="nav-wrapper">
         <div class="container">
-            <a href="#" class="brand-logo">
+            <a href="index.html" class="brand-logo">
                 <img src="logo.png" alt="CODE-SNIPPET ENTERPRISE Logo" class="responsive-img">
             </a>
-            <a href="#" class="sidenav-trigger" id="mobile-menu">
+            <!-- Hamburger Menu for Mobile -->
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
             </a>
+            <!-- Navigation Links (Hidden on Mobile) -->
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-                <li><a href="testimonial.html" class="nav-link">Testimonials</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-            </ul>
-            <ul class="sidenav" id="mobile-nav">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-                <li><a href="testimonial.html" class="nav-link">Testimonials</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
     </nav>
+    
+    <!-- Mobile Menu (Sidenav) -->
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
 </header>
 
-
+ 
 <main>
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-             <h1 data-aos="fade-up">About <span class="highlight">CODE-SNIPPET</span></h1>
-             <h2 data-aos="fade-up" data-aos-delay="50">Innovating with code, securing with intelligence.</h2>
-        <p data-aos="fade-up" data-aos-delay="100">Discover our journey, mission, and commitment to excellence in technology and cybersecurity.</p>
-    </section>
- 
-<!-- About Section -->
+<section class="hero" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color));">
+    <div class="container hero-content" style="padding: 80px 0; color: var(--surface-color);">
+        <h1 data-aos="fade-up" style="font-size: 3rem; font-weight: 600; text-align: center;">About <span class="highlight" style="color: var(--accent-color);">CODE-SNIPPET ENTERPRISE</span></h1>
+        <h2 data-aos="fade-up" data-aos-delay="50" style="font-size: 1.8rem; font-weight: 500; text-align: center;">Innovating with Code, Securing with Intelligence</h2>
+        <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem; font-weight: 400; text-align: center; line-height: 1.6; max-width: 800px; margin: 0 auto;">At CODE-SNIPPET ENTERPRISE, we are dedicated to pushing the boundaries of technology and cybersecurity. Our mission is to provide cutting-edge solutions that empower businesses and protect their digital infrastructure. Explore our journey, vision, and commitment to shaping the digital future.</p>
+    </div>
+</section>
+
+    <!-- About Section -->
 <section class="about section">
     <div class="container">
         <div class="row">
+            <!-- Image and Company Info Block -->
             <div class="col s12 m6" data-aos="fade-right">
-                <img src="logo.png" alt="About Us" class="responsive-img">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="logo.png" alt="About Us" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="header">Who We Are</h2>
+                        <p class="flow-text">Founded in 2020, CODE-SNIPPET ENTERPRISE has quickly earned a reputation for delivering cutting-edge software solutions and robust cybersecurity expertise. With a strong commitment to innovation, security, and excellence, we have helped businesses across the globe embrace technology with confidence.</p>
+                    </div>
+                </div>
             </div>
+
+            <!-- Mission, Vision & Milestones Block -->
             <div class="col s12 m6" data-aos="fade-left">
-                <h2>Who We Are</h2>
-                <p>Established in 2020, CODE-SNIPPET ENTERPRISE has been a trusted partner for businesses worldwide, delivering cutting-edge software solutions and unparalleled cybersecurity expertise. With a team of experienced professionals, we prioritize innovation, quality, and security in everything we do.</p>
-                <h3>Our Mission</h3>
-                <p>Empowering businesses to thrive in the digital age through innovative technology solutions and robust cybersecurity strategies.</p>
-                <h3>Our Vision</h3>
-                <p>To be a global leader in software development and cybersecurity, shaping a secure and connected future for all.</p>
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <h3>Our Mission</h3>
+                        <p>Our mission is to empower businesses with innovative, scalable technology solutions and ensure their digital security through comprehensive cybersecurity strategies. We work hand-in-hand with clients to ensure that their digital infrastructure is secure, resilient, and future-proof.</p>
+
+                        <h3>Our Vision</h3>
+                        <p>Our vision is to be recognized as a global leader in the software and cybersecurity space, driving technological advancement while fostering a secure, interconnected world.</p>
+
+                        <h3>Milestones</h3>
+                        <ul class="collection">
+                            <li class="collection-item" data-aos="fade-up" data-aos-delay="100">🔹 Established in 2020 – A strong foundation in technology and cybersecurity.</li>
+                            <li class="collection-item" data-aos="fade-up" data-aos-delay="200">🔹 Global Reach – Serving clients across diverse industries worldwide.</li>
+                            <li class="collection-item" data-aos="fade-up" data-aos-delay="300">🔹 Industry Recognition – Consistently recognized for excellence in software solutions and cybersecurity.</li>
+                            <li class="collection-item" data-aos="fade-up" data-aos-delay="400">🔹 Training Excellence – Delivering cutting-edge training programs to empower organizations to secure their digital assets.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Timeline Section -->
-<section class="timeline section lighten-4">
+<section class="timeline section grey lighten-4">
     <div class="container">
-        <h2 class="center-align">Our Journey</h2>
+        <h2 class="center-align header">Our Journey</h2>
         <ul class="collection">
             <li class="collection-item" data-aos="fade-up">
                 <strong>2020:</strong> Founded in Abuja with a mission to innovate and secure businesses.
@@ -98,13 +125,14 @@
             <li class="collection-item" data-aos="fade-up" data-aos-delay="300">
                 <strong>2023:</strong> Recognized for excellence in delivering secure and innovative solutions.
             </li>
+            <li class="collection-item" data-aos="fade-up" data-aos-delay="400">
+                <strong>2024:</strong> Became a global distributed company, empowering the next generation of tech leaders to work from anywhere in the world.
+            </li>
         </ul>
     </div>
 </section>
 
-
-
-  <!-- Call-to-Action Section -->
+<!-- Call-to-Action Section -->
 <section class="cta section">
     <div class="container">
         <h2 data-aos="fade-up">Join Us in Shaping the Future</h2>
@@ -164,26 +192,18 @@
         </div>
     </div>
 </footer>
-
+<script>
+    // Initialize the sidenav (mobile menu)
+    document.addEventListener('DOMContentLoaded', function() {
+        const elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems);
+    });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const sidenav = document.getElementById('mobile-nav');
-        const trigger = document.getElementById('mobile-menu');
-
-        trigger.addEventListener('click', function() {
-            if (sidenav.style.display === 'flex') {
-                sidenav.style.display = 'none';
-            } else {
-                sidenav.style.display = 'flex';
-            }
-        });
-    });
 </script>
 </body>
 </html>
