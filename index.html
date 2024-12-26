@@ -14,13 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Animate On Scroll (AOS) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
     <nav class="nav-wrapper">
         <div class="container">
@@ -51,6 +48,8 @@
         </div>
     </nav>
 </header>
+
+
 <main>
  <!-- Hero Section -->
 <section class="hero">
@@ -152,39 +151,8 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('nav ul li a');
-
-        window.addEventListener('scroll', function() {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (scrollY >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    });
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
         const carousels = document.querySelectorAll('.carousel');
         M.Carousel.init(carousels, { fullWidth: true, indicators: true });
-    });
-</script>
-
-<script>
-    document.querySelector('#submit-form').addEventListener('click', function(e) {
-        e.preventDefault();
-        alert('Form submitted successfully!');
     });
 </script>
 

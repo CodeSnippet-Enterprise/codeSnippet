@@ -61,20 +61,10 @@ nav {
     padding: 0 20px; /* Add padding to the sides */
 }
 
-/* Brand logo styles */
-nav .brand-logo img {
-    height: 64px; /* Logo height */
-    width: auto; /* Maintain aspect ratio */
-    max-width: 150px; /* Limit logo width for consistency */
-}
-
-.nav-wrapper .brand-logo {
-    font-size: 1.8rem;
-    color: var(--accent-color); /* Pinkish red for the brand name */
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin-right: auto; /* Align logo to the left */
+nav .brand-logo{
+    width: 120px; /* Adjust the logo width */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Navigation links */
@@ -83,23 +73,8 @@ nav ul {
     list-style: none; /* Remove default list styling */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    color: var(--primary-color); /* Blue text color */
 }
-
-nav ul li {
-    margin-left: 20px; /* Space between nav links */
-}
-
-nav ul li a {
-    color: var(--secondary-color); /* Light blue for links */
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
-}
-
-nav ul li a:hover {
-    color: #A02A2A; /* Darker red on hover */
-}
-
 
 /* Call-to-Action Section */
 .cta.section {
@@ -276,32 +251,6 @@ nav ul li a:hover {
 }
 
 
-
-/* Button */
-.explore-btn {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-.explore-btn:hover {
-    background-color: var(--accent-color);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-}
-
-
-
-
-
 /* Buttons */
 button, .btn {
     background-color: var(--accent-color); /* Pinkish Red */
@@ -341,136 +290,6 @@ button:focus, .btn:focus {
     outline-offset: 2px;
     box-shadow: 0 0 8px rgba(66, 128, 236, 0.6); /* Blue glow for focus */
 }
-
-
-/* Large Button (Explore Our Solutions) */
-a.btn-large.explore-btn {
-    background-color: var(--accent-color); /* Pinkish Red */
-    color: #FFFFFF; /* White text */
-    border-radius: 6px;
-    padding: 12px 24px;
-    font-size: 18px; /* Larger font for emphasis */
-    font-weight: bold;
-    display: inline-flex; /* Align icon and text */
-    align-items: center;
-    gap: 8px; /* Space between icon and text */
-    text-decoration: none; /* Remove underline */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover and Active States */
-a.btn-large.explore-btn:hover {
-    background-color: #C8476B; /* Darker red on hover */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-}
-
-a.btn-large.explore-btn:active {
-    transform: translateY(0); /* Neutral position on click */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Returns to default */
-}
-
-/* Material Icon Inside Button */
-a.btn-large.explore-btn .material-icons {
-    font-size: 20px;
-    line-height: 1;
-}
-/* Focus Style */
-a.btn-large.explore-btn:focus {
-    outline: 2px solid var(--primary-color); /* Blue focus ring */
-    outline-offset: 2px;
-    box-shadow: 0 0 8px rgba(66, 128, 236, 0.6); /* Glow for focus */
-}
-
-
-
-/* Large Button (Contact Us) */
-a.btn-large.contact-btn {
-    background-color: var(--primary-color); /* Blue */
-    color: #FFFFFF; /* White text */
-    border-radius: 6px;
-    padding: 12px 24px;
-    font-size: 18px; /* Larger font for emphasis */
-    font-weight: bold;
-    display: inline-flex; /* Align icon and text */
-    align-items: center;
-    gap: 8px; /* Space between icon and text */
-    text-decoration: none; /* Remove underline */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover and Active States */
-a.btn-large.contact-btn:hover {
-    background-color: var(--secondary-color); /* Light Blue on hover */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-}
-
-a.btn-large.contact-btn:active {
-    transform: translateY(0); /* Neutral position on click */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Returns to default */
-}
-
-/* Material Icon Inside Button */
-a.btn-large.contact-btn .material-icons {
-    font-size: 20px;
-    line-height: 1;
-}
-/* Focus Style */
-a.btn-large.contact-btn:focus {
-    outline: 2px solid var(--accent-color); /* Pinkish Red focus ring */
-    outline-offset: 2px;
-    box-shadow: 0 0 8px rgba(220, 114, 135, 0.6); /* Glow for focus */
-}
-
-
-/* Large Button (Send Message) */
-button.btn-large.send-btn {
-    background-color: var(--accent-color); /* Pinkish Red */
-    color: #FFFFFF; /* White text */
-    border-radius: 6px;
-    padding: 12px 24px;
-    font-size: 18px; /* Larger font for emphasis */
-    font-weight: bold;
-    display: inline-flex; /* Align icon and text */
-    align-items: center;
-    gap: 8px; /* Space between icon and text */
-    text-decoration: none; /* Remove underline for consistent look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer; /* Pointer cursor for buttons */
-    border: none; /* Clean borderless design */
-}
-
-/* Hover and Active States */
-button.btn-large.send-btn:hover {
-    background-color: #A02A2A; /* Darker red on hover */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-button.btn-large.send-btn:active {
-    transform: translateY(0); /* Reset position on click */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Back to default shadow */
-}
-
-/* Material Icon Inside Button */
-button.btn-large.send-btn .material-icons {
-    font-size: 20px; /* Icon size */
-    line-height: 1; /* Align icon with text */
-}
-
-/* Focus Style */
-button.btn-large.send-btn:focus {
-    outline: 2px solid var(--primary-color); /* Blue focus ring */
-    outline-offset: 2px;
-    box-shadow: 0 0 8px rgba(66, 128, 236, 0.6); /* Blue glow for focus */
-}
-
-
-
 /* Form Container Styling */
 .contact.section {
     padding: 60px 20px;
@@ -514,28 +333,6 @@ button.btn-large.send-btn:focus {
     resize: none; /* Prevent resizing */
 }
 
-.contact button.send-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--accent-color);
-    color: #fff;
-    padding: 14px 28px;
-    font-size: 18px;
-    border: none;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    gap: 8px;
-}
-
-.contact button.send-btn:hover {
-    background-color: #C8476B; /* Slightly darker pink */
-    transform: translateY(-2px);
-}
-
-.contact button.send-btn .material-icons {
-    font-size: 20px;
-}
 
 .contact-details {
     margin: 20px 0;
@@ -627,8 +424,6 @@ h2, h3, h4 {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
-
 
 
 /* Material Design Typography */
@@ -895,28 +690,11 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     margin-bottom: 2rem;
 }
 
-/* Button Styling */
-.contact-btn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-    background-color: var(--accent-color);
-}
-
 
 .services .card {
     max-width: 100%;
     margin: 10px;
 }
-
 
 
 
@@ -1059,315 +837,4 @@ footer .col {
 
 footer .col:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* General responsive design */
-@media (max-width: 1024px) {
-    .services .col {
-        width: 48%; /* Adjust the card width for medium-sized screens */
-        margin-bottom: 1rem; /* Ensure some spacing between cards on small screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .services .col {
-        width: 100%; /* Cards take up full width on small screens */
-    }
-
-    /* Footer responsiveness */
-    footer .col {
-        flex: 1 1 100%; /* Stack columns */
-        text-align: center; /* Center text */
-    }
-
-    footer .quick-links .links-column {
-        flex: 1 1 100%; /* Stack quick links columns */
-    }
-
-    footer h5 {
-        text-align: center; /* Center the heading */
-    }
-
-    footer .btn-floating {
-        margin: 5px 0; /* Adjust margin */
-    }
-
-    /* Map responsiveness */
-    #map iframe {
-        width: 100%;
-        height: 300px; /* Reduce height for smaller screens */
-    }
-
-    /* Hero section responsiveness */
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero h2 {
-        font-size: 1.8rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        padding: 0 20px;
-    }
-
-    .explore-btn {
-        font-size: 1rem;
-    }
-
-    /* Navigation menu responsiveness */
-    nav {
-        padding: 20px 0; /* Reduce padding for smaller screens */
-    }
-
-    nav .brand-logo img {
-        height: 50px; /* Adjust logo size */
-    }
-
-    nav ul {
-        display: none; /* Hide links initially */
-    }
-
-    nav .menu-toggle {
-        display: block;
-        font-size: 1.5rem;
-        color: var(--secondary-color);
-        cursor: pointer;
-        margin-left: auto;
-    }
-
-    nav ul.show {
-        display: flex; /* Show links when menu is toggled */
-        flex-direction: column; /* Stack links vertically */
-        align-items: center;
-        background-color: var(--background-color); /* Dark blue for dropdown */
-        position: absolute;
-        top: 100px;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-    }
-
-    nav ul li {
-        padding: 10px 0;
-    }
-
-    .contact.section {
-        padding: 30px 10px;
-        border-radius: 8px;
-    }
-
-    .contact .form-label {
-        font-size: 14px;
-        margin-bottom: 6px;
-    }
-
-    .contact .input-group {
-        margin-bottom: 15px;
-    }
-
-    .contact .input-group-text {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .contact .form-control {
-        padding: 10px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 600px) {
-    .services .col {
-        width: 100%; /* Cards take up full width on small screens */
-    }
-
-    /* Footer responsiveness */
-    footer .col {
-        flex: 1 1 100%; /* Stack columns */
-        text-align: center; /* Center text */
-    }
-
-    footer .quick-links .links-column {
-        flex: 1 1 100%; /* Stack quick links columns */
-    }
-
-    footer h5 {
-        text-align: center; /* Center the heading */
-    }
-
-    footer .btn-floating {
-        margin: 5px 0; /* Adjust margin */
-    }
-
-    /* Map responsiveness */
-    #map iframe {
-        width: 100%;
-        height: 300px; /* Reduce height for smaller screens */
-    }
-
-    /* Hero section responsiveness */
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero h2 {
-        font-size: 1.8rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        padding: 0 20px;
-    }
-
-    .explore-btn {
-        font-size: 1rem;
-    }
-
-    /* Navigation menu responsiveness */
-    nav {
-        padding: 20px 0; /* Reduce padding for smaller screens */
-    }
-
-    nav .brand-logo img {
-        height: 50px; /* Adjust logo size */
-    }
-
-    nav ul {
-        display: none; /* Hide links initially */
-    }
-
-    nav .menu-toggle {
-        display: block;
-        font-size: 1.5rem;
-        color: var(--secondary-color);
-        cursor: pointer;
-        margin-left: auto;
-    }
-
-    nav ul.show {
-        display: flex; /* Show links when menu is toggled */
-        flex-direction: column; /* Stack links vertically */
-        align-items: center;
-        background-color: var(--background-color); /* Dark blue for dropdown */
-        position: absolute;
-        top: 100px;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-    }
-
-    nav ul li {
-        padding: 10px 0;
-    }
-
-    .contact.section {
-        padding: 30px 10px;
-        border-radius: 8px;
-    }
-
-    .contact .form-label {
-        font-size: 14px;
-        margin-bottom: 6px;
-    }
-
-    .contact .input-group {
-        margin-bottom: 15px;
-    }
-
-    .contact .input-group-text {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .contact .form-control {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .sidenav {
-        display: flex;
-    }
-
-    .sidenav-trigger {
-        display: block;
-    }
-
-    .hide-on-med-and-down {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul.show {
-        top: 60px; /* Adjust the top position for smaller screens */
-        padding: 10px 0;
-    }
-
-    nav ul li {
-        padding: 8px 0; /* Reduce padding for smaller screens */
-    }
-
-    nav ul li a {
-        font-size: 14px; /* Adjust font size for better readability */
-    }
-}
-
-/* Small screen styles */
-@media (max-width: 600px) {
-    footer .col {
-        margin-bottom: 20px; /* Add spacing between stacked sections */
-    }
-
-    button, .btn {
-        padding: 10px 16px;
-        font-size: 14px;
-    }
-
-    .sidenav {
-        display: flex;
-    }
-
-    .sidenav-trigger {
-        display: block;
-    }
-
-    .hide-on-med-and-down {
-        display: none;
-    }
-}
-
-/* Mobile menu styles */
-.sidenav {
-    display: none; /* Hide by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-color);
-    z-index: 1000;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.sidenav li {
-    margin: 20px 0;
-}
-
-.sidenav-trigger {
-    display: none; /* Hide by default */
-    font-size: 2rem;
-    color: var(--secondary-color);
-    cursor: pointer;
 }
