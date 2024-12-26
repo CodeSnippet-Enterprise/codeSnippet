@@ -655,3 +655,155 @@ footer .footer-copyright {
     text-align: center;
     font-size: 14px;
 }
+
+/* Define media queries for different screen sizes */
+@media (max-width: 1200px) {
+    /* Large Screens (Tablets, Laptops) */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta h2, .cta h3 {
+        font-size: 2rem;
+    }
+
+    .cta p, .cta .flow-text {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    /* Medium Screens (Tablets, Small Desktops) */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta h2, .cta h3 {
+        font-size: 1.8rem;
+    }
+
+    .cta p, .cta .flow-text {
+        font-size: 1rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .company-location iframe {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .faq-item {
+        margin-bottom: 10px;
+    }
+
+    .filter-section select {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small Screens (Mobile Devices) */
+    body {
+        margin-bottom: 20px; /* Reduce margin on mobile */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .cta h2, .cta h3 {
+        font-size: 1.5rem;
+    }
+
+    .cta p, .cta .flow-text {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin: 1rem 0;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .company-location iframe {
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .faq-item {
+        font-size: 0.9rem;
+    }
+
+    .filter-section select {
+        padding: 6px;
+    }
+    
+    .contact-section .input-group {
+        margin-bottom: 12px;
+    }
+    
+    .contact-section .form-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Make buttons responsive */
+.btn, .cta a.btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+}
+
+.btn:hover, .cta a.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Ensure containers fit small screens */
+.video-container, .services .card, .timeline .collection-item {
+    width: 100%;
+    margin: 0 auto;
+}
