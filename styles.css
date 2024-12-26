@@ -63,21 +63,25 @@ body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
 }
-
 /* Header (Navbar) */
 nav {
-    height: 100px;
+    height: 80px; /* Reduced height for a more compact look */
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--background-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
+    position: relative; /* Added for potential future enhancements */
 }
 
 nav .brand-logo {
     width: 120px;
     transition: transform 0.3s ease-in-out;
+}
+
+nav .brand-logo:hover {
+    transform: scale(1.05); /* Slightly enlarge logo on hover */
 }
 
 .nav-links {
@@ -86,17 +90,37 @@ nav .brand-logo {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 20px; /* Increased margin for better spacing */
 }
 
 .nav-links .nav-link {
     text-decoration: none;
     color: var(--text-color);
-    transition: color 0.3s ease;
+    font-weight: 500; /* Added font weight for better readability */
+    font-size: 16px; /* Set a consistent font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
 }
 
 .nav-links .nav-link:hover {
     color: var(--highlight-color);
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Optional: Add a responsive design for mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
 }
 
 /* Hero Section */
@@ -569,7 +593,6 @@ p {
     color: #A02A2A; /* Darker red on hover */
     text-decoration: underline;
 }
-
 /* Footer Styles */
 footer {
     background-color: var(--background-color) !important;
@@ -578,32 +601,41 @@ footer {
     text-align: center;
     border-top: 2px solid var(--primary-color);
 }
+
 footer .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; /* Added padding for better spacing */
 }
+
 footer .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 footer .col {
     flex: 1 1 30%;
     margin: 10px 0;
     text-align: left;
-    box-shadow: 0 4px 6px #DC7287;
-    border-radius: 10px;
-    padding: 15px;
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow for a cleaner look */
+    border-radius: 8px; /* Slightly reduced border radius */
+    padding: 20px; /* Increased padding for better content spacing */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
 }
+
 footer .col:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Subtle lift effect on hover */
 }
+
 footer h5 {
     margin-bottom: 15px;
-    font-weight: bold;
+    font-weight: 500; /* Adjusted font weight for better readability */
     color: var(--accent-color);
+    font-size: 18px; /* Increased font size for headings */
 }
+
 footer p,
 footer a {
     font-size: 16px;
@@ -611,25 +643,32 @@ footer a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 footer a:hover {
     color: var(--accent-color);
+    text-decoration: underline; /* Added underline on hover for better UX */
 }
+
 footer .quick-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 footer .quick-links .links-column {
     flex: 1 1 45%;
     margin: 10px 0;
 }
+
 footer .quick-links ul {
     padding-left: 0;
     list-style-type: none;
 }
+
 footer .quick-links li {
     margin: 8px 0;
 }
+
 footer .btn-floating {
     margin: 5px;
     background-color: var(--primary-color);
@@ -639,23 +678,28 @@ footer .btn-floating {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease;
+    border-radius: 50%; /* Ensured circular shape */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
 }
+
 footer .btn-floating i {
     color: white;
     font-size: 18px;
 }
+
 footer .btn-floating:hover {
     background-color: var(--secondary-color);
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
+
 footer .footer-copyright {
     background-color: var(--background-color);
     color: var(--secondary-color);
     padding: 10px 0;
     text-align: center;
     font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Added subtle border for separation */
 }
-
 
 /* Define media queries for different screen sizes */
 @media (max-width: 1200px) {

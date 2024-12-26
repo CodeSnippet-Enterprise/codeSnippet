@@ -136,10 +136,13 @@
 <footer class="page-footer">
     <div class="container">
         <div class="row">
+            <!-- Company Info -->
             <div class="col s12 m6 l4">
                 <h5>CODE-SNIPPET ENTERPRISE</h5>
-                <p>Empowering businesses with cutting-edge technology solutions. We are committed to innovation, excellence, and driving digital transformation globally.</p>
+                <p>Innovating the future of coding and cybersecurity solutions globally.</p>
             </div>
+
+            <!-- Quick Links -->
             <div class="col s12 m6 l4 quick-links">
                 <div class="links-column">
                     <h5>Quick Links</h5>
@@ -156,9 +159,13 @@
                         <li><a href="testimonial.html">Testimonials</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="careers.html">Careers</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
-            </div>
+            </div>  
+
+            <!-- Social Media -->
             <div class="col s12 m6 l4">
                 <h5>Follow Us</h5>
                 <a href="#" class="btn-floating btn-large waves-effect"><i class="fab fa-facebook-f"></i></a>
@@ -166,6 +173,7 @@
                 <a href="#" class="btn-floating btn-large waves-effect"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="btn-floating btn-large waves-effect"><i class="fab fa-github"></i></a>
             </div>
+
         </div>
     </div>
     <div class="footer-copyright">
@@ -175,15 +183,17 @@
     </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const sidenav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sidenav, {});
-        M.AutoInit();
+        var elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems);
     });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 
 </body>
