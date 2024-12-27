@@ -42,7 +42,7 @@ body {
 
 .hero h1, 
 .hero h2 {
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Softer, more pronounced shadow */
+    text-shadow: 2px 2px 10px rgba(99, 98, 98, 0.801); /* Softer, more pronounced shadow */
     margin-bottom: 20px;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .hero p {
-    color: rgba(240, 240, 240, 0.9);
+    color: rgb(255, 255, 255);
     font-size: 1.4rem; /* Increased size for better readability */
     line-height: 1.8; /* Improved line height */
     max-width: 700px; /* Ensure text stays within readable width */
@@ -598,6 +598,7 @@ input[type="text"], input[type="email"], textarea {
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border: 1px solid var(--accent-color); /* Border color on focus */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 /* About Section */
@@ -730,6 +731,11 @@ p {
 
 
 /* Form Container Styling */
+form{
+    background-color: white;
+    padding: 4rem;
+    border-radius: 10px;
+}
 .contact-section {
     padding: 40px 20px;
     background: #f7f7f7; /* Light neutral background */
