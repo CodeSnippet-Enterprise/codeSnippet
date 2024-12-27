@@ -10,14 +10,16 @@
 
 /* Base Styles */
 body {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color)),
-        url('path-to-texture.png'); /* Subtle texture image */
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); /* Gradient background */
     background-size: cover;
     background-blend-mode: overlay;
     color: var(--on-surface-color);
     font-family: 'Roboto', sans-serif;
     margin-bottom: 40px;
 }
+
+
+
 
 /* Hero Section */
 .hero {
@@ -404,12 +406,88 @@ nav .brand-logo:hover {
     margin: 0;
 }
 
+
 /* Subheadings */
 h2, h3, h4 {
-    color: var(--background-color);
-    font-weight: bold;
+    color: var(--background-color); /* Contrasting color for subheadings */
+    font-weight: 600; /* Semi-bold for readability */
+    letter-spacing: 0.5px; /* Slight letter spacing for clarity */
+    margin-bottom: 15px; /* Space to differentiate sections */
+    text-transform: capitalize; /* Professional and clean look */
+    line-height: 1.4; /* Maintain proportional spacing */
+}
+
+/* Specific Heading Styles */
+h2 {
+    font-size: 2.5rem; /* Larger for main subheadings */
+    margin-bottom: 20px; /* More space below for distinction */
+}
+
+h3 {
+    font-size: 2rem; /* Medium subheadings */
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.5rem; /* Smaller subheadings */
     margin-bottom: 10px;
 }
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2rem; /* Comfortable size for body text */
+    line-height: 1.8; /* Adequate spacing for readability */
+    color: rgba(0, 0, 0, 0.87); /* High-contrast text for readability */
+    margin-bottom: 20px; /* Clear separation between paragraphs */
+    max-width: 800px; /* Limit width for better readability */
+    text-align: justify; /* Align text for a clean block appearance */
+}
+
+/* Links in Paragraphs */
+p a {
+    color: var(--primary-color); /* Blue for emphasis */
+    text-decoration: underline; /* Indicate interactivity */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: var(--accent-color); /* Change color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 2rem; /* Adjust subheadings for tablets */
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 1.1rem; /* Slightly smaller for smaller screens */
+        line-height: 1.6; /* Tighter line spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem; /* Adjust for mobile devices */
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem; /* Comfortable size for smaller screens */
+        line-height: 1.5;
+    }
+}
+
 
 
 
