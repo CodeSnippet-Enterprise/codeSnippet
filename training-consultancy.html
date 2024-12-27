@@ -1,52 +1,24 @@
-<!-- Blog Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - CODE-SNIPPET ENTERPRISE</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Professional software development and cybersecurity solutions.">
+    <meta name="keywords" content="software development, cybersecurity, CODE-SNIPPET ENTERPRISE, consultancy, training, global solutions">
+    <meta name="author" content="CODE-SNIPPET ENTERPRISE">
+    <title>Training and Consultancy - CODE-SNIPPET ENTERPRISE</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Animate On Scroll (AOS) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .section-title {
-            font-weight: 700;
-            font-size: 2.5rem;
-            color: #29283F; /* Dark blue from branding */
-            margin-bottom: 30px;
-        }
-        .card-content p {
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #4a4a4a; /* Lighter text color for better readability */
-        }
-        .card-title {
-            font-weight: 600;
-            font-size: 1.8rem;
-            color: #4280EC; /* Blue from branding */
-        }
-        .explore-btn {
-            background-color: #62BAF9; /* Light blue from branding */
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 4px;
-            margin-top: 10px;
-        }
-        .explore-btn:hover {
-            background-color: #4280EC; /* Darker blue on hover */
-        }
-        .footer h5 {
-            font-weight: 600;
-            color: #29283F;
-        }
-        .footer a {
-            color: #4280EC;
-        }
-        .footer a:hover {
-            color: #62BAF9;
-        }
-    </style>
+</head>
 </head>
 <body>
    
@@ -57,9 +29,11 @@
             <a href="index.html" class="brand-logo">
                 <img src="logo.png" alt="CODE-SNIPPET ENTERPRISE Logo" class="responsive-img">
             </a>
+            <!-- Hamburger Menu for Mobile -->
             <a href="#" data-target="mobile-menu" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
             </a>
+            <!-- Navigation Links (Hidden on Mobile) -->
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -71,6 +45,8 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- Mobile Menu (Sidenav) -->
     <ul class="sidenav" id="mobile-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -81,61 +57,47 @@
         <li><a href="blog.html">Blog</a></li>
     </ul>
 </header>
- <section class="hero">
-    <div class="container hero-content">
-        <h1 data-aos="fade-up">Latest<span class="highlight"> Insights & Innovations</span></h1>
-        <h2 data-aos="fade-up" data-aos-delay="50">sharing knowledge.</h2>
-        <p data-aos="fade-up" data-aos-delay="100">At CODE-SNIPPET ENTERPRISE, we believe in the power of knowledge sharing. Explore our blog for the latest insights and innovations in coding, cybersecurity, and technology.</p>
-</section>
-<!-- Main Blog Section -->
-<main>
-    <section class="section blog-section">
-        <div class="container">
-            <h2 class="section-title">Trends, Insights & Innovations</h2>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content" style="background-image: url('training-hero.jpg');">
+                <h1 data-aos="fade-up">Training and Consultancy</h1>
+                <p data-aos="fade-up" data-aos-delay="50">Empowering Teams with Knowledge and Expertise</p>
+            </div>
+        </section>
+
+        <section class="details section">
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <h5 class="card-title">Cybersecurity Trends 2024: Adapting to Change</h5>
-                            <p>The cybersecurity landscape is constantly evolving. In 2024, organizations must adapt to new challenges, from advanced AI-driven threats to increasing vulnerabilities in cloud infrastructure. Stay ahead with our comprehensive analysis.</p>
-                            <a href="#" class="btn explore-btn">Read More</a>
-                        </div>
-                    </div>
+                    <h2 data-aos="fade-right">Tailored Training Programs</h2>
+                    <p data-aos="fade-right" data-aos-delay="50">Our training solutions are customized to address your organization's unique needs. Whether it's cybersecurity awareness, technical skill enhancement, or software adoption, we ensure your team is equipped to excel.</p>
                 </div>
                 <div class="col s12 m6">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <h5 class="card-title">Top Development Tools for 2024</h5>
-                            <p>Discover the most innovative tools transforming software development. From efficient IDEs to powerful automation tools, we explore what developers need to stay competitive in a fast-paced market.</p>
-                            <a href="#" class="btn explore-btn">Read More</a>
-                        </div>
-                    </div>
+                    <img src="training-details.jpg" alt="Training" class="responsive-img" data-aos="fade-left">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col s12 m6">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <h5 class="card-title">AI in Business: Unlocking Potential</h5>
-                            <p>Artificial Intelligence is changing the way businesses operate. This blog explores AI’s impact on data analysis, customer service, and automation, and how organizations can leverage AI to maximize growth.</p>
-                            <a href="#" class="btn explore-btn">Read More</a>
-                        </div>
-                    </div>
+                    <img src="consultancy.jpg" alt="Consultancy" class="responsive-img" data-aos="fade-right">
                 </div>
                 <div class="col s12 m6">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <h5 class="card-title">Building Resilient Cloud Infrastructures</h5>
-                            <p>Cloud security is a priority for enterprises. Our guide to building a resilient cloud infrastructure highlights the best practices for ensuring data protection and operational continuity in a dynamic digital environment.</p>
-                            <a href="#" class="btn explore-btn">Read More</a>
-                        </div>
-                    </div>
+                    <h2 data-aos="fade-left">Expert Consultancy</h2>
+                    <p data-aos="fade-left" data-aos-delay="50">Our seasoned consultants provide strategic guidance to optimize your business processes, improve security, and adopt the latest technologies effectively. We partner with you to drive measurable outcomes.</p>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+
+        <section class="cta section">
+            <h3 class="center-align" data-aos="fade-up">Unlock Your Team's Potential</h3>
+            <p class="center-align" data-aos="fade-up" data-aos-delay="50">Let us help you build the skills and strategies needed to thrive in today's competitive landscape.</p>
+            <div class="center-align">
+                <a href="contact.html" class="btn waves-effect waves-light btn-large contact-btn" role="button">
+                    <span class="material-icons">contact_mail</span> Get Started Today
+                </a>
+            </div>
+        </section>
+    </main>
 
 <!-- Footer -->
 <footer class="page-footer">
@@ -168,7 +130,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
-            </div>  
+            </div>
 
             <!-- Social Media -->
             <div class="col s12 m6 l4">
