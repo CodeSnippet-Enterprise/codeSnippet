@@ -606,7 +606,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 
 /* About Section */
-.about {
+.about-us {
     padding: 40px 20px;
     text-align: center;
     background-color: #f5f5f5; /* Light gray background */
@@ -651,6 +651,21 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 .about-list li:hover {
     background: #f0f0f0; /* Slightly darker background on hover */
+}
+/* Global presence */
+.global-presence{
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+    .global-row{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        box-shadow: 0 2px 30px 4px rgba(0, 0, 0, 0.1);
+        div{
+           margin-right: 20px;
+        }
+    }
 }
 
 /* Timeline Section */
@@ -927,6 +942,15 @@ footer .footer-copyright {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .global-presence{
+        display: block;
+        .global-row{
+            flex-direction: column;
+            div{
+                margin-right: 0;
+            }
+        }
+    }
     footer .row {
         flex-direction: column; /* Stack columns vertically on smaller screens */
         align-items: center;
@@ -999,9 +1023,13 @@ footer .footer-copyright {
         flex-direction: column;
         align-items: center;
     }
+    .sidenav{
+        margin-top: 5rem;
+    }
 
     .hero {
         padding: 60px 10px;
+        margin-top: 20px;
     }
 
     .hero h1 {
@@ -1064,4 +1092,14 @@ footer .footer-copyright {
 .video-container, .services .card, .timeline .collection-item {
     width: 100%;
     margin: 0 auto;
+}
+
+.global-presence{
+    display: block;
+    .global-row{
+        margin-top: 20px;
+    }
+    .div{
+        margin-top: 20px;
+    }
 }
