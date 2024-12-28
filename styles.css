@@ -261,7 +261,7 @@ nav {
     position: fixed; /* Sticks to the top for easy navigation */
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    z-index: 1000 !important; /* Ensure it stays on top of other elements */
 }
 
 nav .brand-logo {
@@ -987,6 +987,9 @@ footer .footer-copyright {
 
 @media (max-width: 768px) {
     /* Medium Screens (Tablets, Small Desktops) */
+   body{
+    overflow-x: hidden;
+   }
     nav {
         flex-direction: column;
         height: auto;
@@ -1033,10 +1036,14 @@ footer .footer-copyright {
 
 @media (max-width: 480px) {
     /* Small Screens (Mobile Devices) */
+   html{
+    overflow-x: hidden;
+   }
     body {
+        width: 100%;
         margin-bottom: 20px; /* Reduce margin on mobile */
-        overflow-x: hidden;
     }
+   
 
     .nav-links {
         flex-direction: column;
