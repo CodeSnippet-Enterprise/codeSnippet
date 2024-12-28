@@ -960,6 +960,10 @@ footer .footer-copyright {
 .hosting-maintenance{
     margin-top: 5rem;
 }
+/* Custom-software */
+.custom-software{
+    margin-top: 5rem;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1127,6 +1131,14 @@ footer .footer-copyright {
     }
     .hosting-maintenance > h1{
         font-size: 40px;
+    }
+    .custom-software {
+       h1{
+        margin-top: 5rem;
+        font-size: 30px;
+        text-align: center
+       };
+       
     }
 }
 
