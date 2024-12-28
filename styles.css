@@ -968,6 +968,12 @@ footer .footer-copyright {
 .digital-marketing{
     margin-top: 5rem;
 }
+.testimonial-section >p{
+   text-align: center;
+   margin-left: 18rem;
+   color: white;
+   font-size: 20px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1150,6 +1156,10 @@ footer .footer-copyright {
             text-align: center;
         }
     }
+    .testimonial-section >p{
+        width: 70%;
+        margin: auto;
+     }
 }
 
 /* Make buttons responsive */
