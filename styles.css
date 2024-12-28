@@ -956,6 +956,11 @@ footer .footer-copyright {
     
    
 }
+/* Hosting maintenance */
+.hosting-maintenance{
+    margin-top: 5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .global-presence{
@@ -1119,6 +1124,9 @@ footer .footer-copyright {
         h3{
             color: var(--accent-color);
         }
+    }
+    .hosting-maintenance > h1{
+        font-size: 40px;
     }
 }
 
