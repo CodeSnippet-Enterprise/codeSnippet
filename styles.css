@@ -103,7 +103,20 @@ body {
     z-index: 0;
     pointer-events: none; /* Ensure interactivity remains unaffected */
 }
-
+.send-btn{
+    margin-top: 2rem;
+}
+.submit-btn{
+    font-size: 20px;
+    height: 3rem;
+    padding:0;
+}
+.close-btn{
+   bottom: 120px;
+}
+.close-btn:hover{
+  color: red;
+}
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     .hero h1 {
