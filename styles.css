@@ -238,11 +238,13 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins' ;
+    /* overflow-x: hidden; */
 }
 
 body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 
@@ -947,8 +949,11 @@ footer .footer-copyright {
         margin-left: 20rem;
     }
  }
- .web-dev-intro > h2,h3{
-    color: white;
+ .web-dev-intro {
+    h2{
+        color: white;
+    }
+    
    
 }
 /* Responsive Design */
