@@ -964,6 +964,10 @@ footer .footer-copyright {
 .custom-software{
     margin-top: 5rem;
 }
+/* digital-marketing */
+.digital-marketing{
+    margin-top: 5rem;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1139,6 +1143,12 @@ footer .footer-copyright {
         text-align: center
        };
        
+    }
+    .digital-marketing{
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
     }
 }
 
