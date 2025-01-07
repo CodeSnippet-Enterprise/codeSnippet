@@ -1,3 +1,6 @@
+/* Font Links for Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Define your color palette */
 :root {
     --primary-color: #4280EC; /* Blue */
@@ -42,7 +45,7 @@ body {
 
 .hero h1, 
 .hero h2 {
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Softer, more pronounced shadow */
+    text-shadow: 2px 2px 10px rgba(99, 98, 98, 0.801); /* Softer, more pronounced shadow */
     margin-bottom: 20px;
 }
 
@@ -60,7 +63,7 @@ body {
 }
 
 .hero p {
-    color: rgba(240, 240, 240, 0.9);
+    color: rgb(255, 255, 255);
     font-size: 1.4rem; /* Increased size for better readability */
     line-height: 1.8; /* Improved line height */
     max-width: 700px; /* Ensure text stays within readable width */
@@ -100,7 +103,20 @@ body {
     z-index: 0;
     pointer-events: none; /* Ensure interactivity remains unaffected */
 }
-
+.send-btn{
+    margin-top: 2rem;
+}
+.submit-btn{
+    font-size: 20px;
+    height: 3rem;
+    padding:0;
+}
+.close-btn{
+   bottom: 120px;
+}
+.close-btn:hover{
+  color: red;
+}
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     .hero h1 {
@@ -234,11 +250,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins' ;
+    /* overflow-x: hidden; */
 }
 
 body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 
@@ -255,7 +274,7 @@ nav {
     position: fixed; /* Sticks to the top for easy navigation */
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    z-index: 1000 !important; /* Ensure it stays on top of other elements */
 }
 
 nav .brand-logo {
@@ -598,10 +617,11 @@ input[type="text"], input[type="email"], textarea {
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border: 1px solid var(--accent-color); /* Border color on focus */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 /* About Section */
-.about {
+.about-us {
     padding: 40px 20px;
     text-align: center;
     background-color: #f5f5f5; /* Light gray background */
@@ -646,6 +666,21 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 .about-list li:hover {
     background: #f0f0f0; /* Slightly darker background on hover */
+}
+/* Global presence */
+.global-presence{
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+    .global-row{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        box-shadow: 0 2px 30px 4px rgba(0, 0, 0, 0.1);
+        div{
+           margin-right: 20px;
+        }
+    }
 }
 
 /* Timeline Section */
@@ -730,6 +765,11 @@ p {
 
 
 /* Form Container Styling */
+form{
+    background-color: white;
+    padding: 4rem;
+    border-radius: 10px;
+}
 .contact-section {
     padding: 40px 20px;
     background: #f7f7f7; /* Light neutral background */
@@ -914,9 +954,53 @@ footer .footer-copyright {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
 }
+/* Web development styling */
+ .web-dev-header{
+    margin-top: 5rem;
+    p{
+        text-align: center;
+        margin-left: 20rem;
+    }
+ }
+ .web-dev-intro {
+    h2{
+        color: white;
+    }
+    
+   
+}
+/* Hosting maintenance */
+.hosting-maintenance{
+    margin-top: 5rem;
+}
+/* Custom-software */
+.custom-software{
+    margin-top: 5rem;
+}
+/* digital-marketing */
+.digital-marketing{
+    margin-top: 5rem;
+}
+.testimonial-section >p{
+   text-align: center;
+   margin-left: 18rem;
+   color: white;
+   font-size: 20px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .global-presence{
+        display: block;
+        .global-row{
+            flex-direction: column;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            div{
+                margin-right: 0;
+            }
+        }
+    }
     footer .row {
         flex-direction: column; /* Stack columns vertically on smaller screens */
         align-items: center;
@@ -935,6 +1019,9 @@ footer .footer-copyright {
 
 @media (max-width: 768px) {
     /* Medium Screens (Tablets, Small Desktops) */
+   body{
+    overflow-x: hidden;
+   }
     nav {
         flex-direction: column;
         height: auto;
@@ -981,17 +1068,26 @@ footer .footer-copyright {
 
 @media (max-width: 480px) {
     /* Small Screens (Mobile Devices) */
+   html{
+    overflow-x: hidden;
+   }
     body {
+        width: 100%;
         margin-bottom: 20px; /* Reduce margin on mobile */
     }
+   
 
     .nav-links {
         flex-direction: column;
         align-items: center;
     }
+    .sidenav{
+        margin-top: 5rem;
+    }
 
     .hero {
         padding: 60px 10px;
+        margin-top: 20px;
     }
 
     .hero h1 {
@@ -1038,6 +1134,45 @@ footer .footer-copyright {
     .contact-section .form-label {
         font-size: 0.9rem;
     }
+    .web-dev-header {
+     h1{
+        font-size: 30px;
+        font-weight: 600;
+     }
+     p{
+        margin-left: 0;
+        /* text-align: center; */
+        font-size: 15px;
+        font-style: italic;
+     }
+    }
+    .web-dev-intro > h2{
+        color: var(--accent-color);
+        h3{
+            color: var(--accent-color);
+        }
+    }
+    .hosting-maintenance > h1{
+        font-size: 40px;
+    }
+    .custom-software {
+       h1{
+        margin-top: 5rem;
+        font-size: 30px;
+        text-align: center
+       };
+       
+    }
+    .digital-marketing{
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    .testimonial-section >p{
+        width: 70%;
+        margin: auto;
+     }
 }
 
 /* Make buttons responsive */
@@ -1054,4 +1189,15 @@ footer .footer-copyright {
 .video-container, .services .card, .timeline .collection-item {
     width: 100%;
     margin: 0 auto;
+}
+
+.global-presence{
+    display: block;
+    .global-row{
+        margin-top: 20px;
+    }
+    .div{
+        margin-top: 20px;
+    }
+   
 }
