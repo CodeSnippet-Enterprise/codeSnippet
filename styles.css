@@ -564,13 +564,29 @@ p a:hover {
     color: #fff; /* White text on hover */
 }
 
-/* Projects Section */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 1rem;
+/* Clients Section */
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-top: 1.5rem;
 }
+
+.client-logo {
+    max-width: 180px; /* Adjust logo size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(100%); /* Optional: Make logos uniform in style */
+    transition: filter 0.3s ease-in-out;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+}
+
 
 /* Collection Section */
 .collection {
@@ -685,15 +701,98 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 /* Timeline Section */
 .timeline {
-    padding: 30px 20px;
+    padding: 60px 20px;
     background-color: #29283F; /* Dark blue background */
     color: #f5f5f5; /* Light text */
+    position: relative;
 }
 
 .timeline h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 4px;
+    background-color: #4A90E2; /* Timeline line color */
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: #4A90E2; /* Timeline dot color */
+    border-radius: 50%;
+    border: 3px solid #29283F; /* Match background color */
+    z-index: 2;
+}
+
+.timeline-item strong {
+    font-size: 1.2rem;
+    color: #4A90E2; /* Highlight color for years */
+    font-weight: 600;
+}
+
+.timeline-item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+.timeline-item:hover::before {
+    background-color: #FF6B6B; /* Hover effect for timeline dot */
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover strong {
+    color: #FF6B6B; /* Hover effect for year text */
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding-left: 20px;
+    }
+
+    .timeline-container::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+    .timeline-item::before {
+        left: 6px;
+    }
 }
 
 .collection-item {
@@ -717,38 +816,122 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 /* Services Section */
 .services {
-    margin-top: 2rem;
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+.services .row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to ensure cards stay in one row */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    gap: 20px; /* Spacing between cards */
+    padding-bottom: 20px; /* Add padding to accommodate scrollbar */
+}
+
+.services .col {
+    flex: 0 0 auto; /* Prevent flex items from shrinking or growing */
+    width: calc(20% - 16px); /* 5 cards per row with spacing */
+    box-sizing: border-box;
 }
 
 .services .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 10px;
-    padding: 1rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+    height: 100%; /* Ensure equal height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .services .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #4280EC; /* Highlight border on hover */
 }
 
 .services .card-title {
-    color: #DC7287; /* Accent color */
-    font-weight: bold;
-    margin-bottom: 10px;
+    color: #29283F; /* Dark blue for titles */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.services .card-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #DC7287; /* Accent color underline */
+    border-radius: 2px;
+}
+
+.services .card-content p {
+    color: #555555; /* Dark gray for text */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.services .card-action {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    margin-top: auto; /* Push action to the bottom */
 }
 
 .services .card-action a {
     color: #4280EC; /* Primary color */
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
 }
 
 .services .card-action a:hover {
-    color: #DC7287; /* Accent color */
+    color: #DC7287; /* Accent color on hover */
+}
+
+.services .card-action i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.services .card-action a:hover i {
+    transform: translateX(5px); /* Arrow animation on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .services .col {
+        width: calc(25% - 16px); /* 4 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .services .col {
+        width: calc(33.33% - 16px); /* 3 cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .services .col {
+        width: calc(50% - 16px); /* 2 cards per row on smaller tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .services .col {
+        width: calc(100% - 16px); /* 1 card per row on mobile */
+    }
 }
 
 /* General Text Styling */
